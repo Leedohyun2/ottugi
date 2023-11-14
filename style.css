@@ -236,13 +236,26 @@ right: 360px;
    margin: auto;
    /* background: #DF2D32; */
 }
-.right_event {
-   width: 600px;
-   margin: auto;
-   /* background: #FEF100; */
-}
 .left_event {
    width: 600px;
    margin: auto;
    /* background: green; */
 }
+.left_event a img:hover{
+   transform: scale(1.01);
+}
+.right_event {
+   width: 600px;
+   margin: auto;
+   display: flex;
+   /* background: #FEF100; */
+}
+.right2 {
+   text-align: center;
+   /* background: #DF2D32; */
+   margin-left: 45px;
+}
+.event_img2_cla img:hover{
+   transform: scale(1.01);
+}
+
