@@ -213,13 +213,13 @@ right: 360px;
 /* 뉴스 more버튼 */
 .new_more_btn {
    position: absolute;
-   top: 1100px;
-   left: 430px;
+   top: 60px;
+   left: 90px;
 }
 .new_more_btn a {
    color: #DF2D32;
    font-size: 18px;
-   font-weight: bold;
+   font-weight: 600;
 }
 
 /* 위로가기 버튼 */
@@ -266,7 +266,7 @@ right: 360px;
    width: 50%;
 }
 .event_img2_cla img:hover{
-   transform: scale(1.01);
+   transform: scale(1.02);
 }
 .new_image1 {
    position: absolute;
@@ -348,6 +348,9 @@ right: 360px;
 }
 
 /* 인기상품페이지 */
+.hot_imgs_container img{
+   display: block;
+}
 .main_hot_wrap {
    margin-top: 80px;
    width: 1920px;
@@ -361,11 +364,27 @@ right: 360px;
 }
 .main_hot h3 {
    font-size: 32px;
+   font-weight: 600;
 }
 .small_txt {
    font-size: 18px;
    font-weight: 400;
    margin:20px 0 40px 0;
+}
+.hot_img1{
+   position: relative;
+}
+.hot_img2{
+   position: relative;
+}
+.hot_img3{
+   position: relative;
+}
+.hot_img4{
+   position: relative;
+}
+.hot_img5{
+   position: relative;
 }
 .hot_imgs_container {
    position: relative;
@@ -377,16 +396,69 @@ right: 360px;
 .hot_imgs {
    width: 1200px;
    margin: auto;
-}
-.hot_imgs ul{
    display: flex;
    justify-content: space-between;
+}
+.hot_img1:hover{
+   transform: perspective(1500px) rotateY(30deg);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+.hot_img2:hover{
+   transform: perspective(1500px) rotateY(30deg);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+.hot_img3:hover{
+   transform: perspective(1500px) rotateY(30deg);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+.hot_img4:hover{
+   transform: perspective(1500px) rotateY(30deg);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+.hot_img5:hover{
+   transform: perspective(1500px) rotateY(30deg);
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+.up_list_bul {
+   position: absolute;
+   /* background: #DF2D32; */
+   left: 105px;
+   bottom: -2px;
+}
+.up_list_bul img{
+   width: 15px;
+   height: 8px;
+   display: block;
+   background: #FEF100;
+}
+.hot_txt1 {
+   background: #fff;
+   width: 220px;
+   height: 130px;
+   /* text-align: center; */
+   padding: 18px;
+   border-top: 1px solid #edebeb;
+}
+.hot_txt1 h3 {
+   font-size: 18px;
+   color: #757575;
+}
+
+.hot_txt1 p {
+   text-align: left;
+   font-size: 14px;
+   color: #757575;
 }
 
 /* 인기상품 좌우버튼 */
 .hot_left_btn {
    position: absolute;
-   top: 100px;
+   top: 160px;
    left: 280px;
 }
 .hot_left_btn img {
@@ -395,10 +467,65 @@ right: 360px;
 }
 .hot_right_btn {
    position: absolute;
-   top: 100px;
+   top: 160px;
    right: 280px;
 }
 .hot_right_btn img {
    width: 40px;
    height: 68px;
+}
+
+/* O'Kitchen */
+.kitchen_wrap {
+   background: #FFFEE5;
+   height: 580px;
+}
+.kitchen_wrap img {
+   height: 172px;
+}
+.kitchen_main_txt {
+   text-align: center;
+}
+.kitchen_main_txt h3 {
+   font-size: 30px;
+   font-weight: 400;
+   padding: 75px 0 30px 0;
+   background: url(images/tit_h2.png) center no-repeat;
+}
+.kitchen_main_txt p {
+   margin-bottom: 40px;
+}
+.kitchen_slide_img_container {
+   display: flex;
+   justify-content: space-between;
+   width: 1200px;
+   height: 280px;
+   margin: auto;
+   overflow: scroll;
+}
+.kitchen_slide_img_container::-webkit-scrollbar {
+   width: 0;
+   height: 5px;
+   background-color: #F2F1D9;
+}
+.kitchen_slide_img_container::-webkit-scrollbar-thumb {
+   background: #C2C1AE;
+}
+.kitchen_slide_img1 {
+   margin-right: 34px;
+}
+.kitchen_slide_txt1 {
+   font-weight: 600;
+}
+.kitchen_slide_img1 span {
+   font-size: 13px;
+   color: #737371;
+   font-weight: bold;
+   margin-top: 30px;
+   display: inline-block;
+}
+.main_name a{
+   color: #3B3B3A;
+   font-size: 20px;
+   font-weight: bold;
 }
