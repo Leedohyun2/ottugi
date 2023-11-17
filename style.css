@@ -2,6 +2,7 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   /* font-family: 'Roboto Mono', monospace; */
 }
 
 .hide{
@@ -58,10 +59,11 @@ ul,li {
 .header_nav ul li a {
    color: black;
    font-size: 18px;
-   font-weight: 400;
+   font-weight: bold;
    padding: 20px;
+   /* border-right: 1px solid black; */
+   /* background: url(images/bul_tabline.png) no-repeat center right; */
 }
-
 
 
 .header_nav ul li a:hover {
@@ -323,12 +325,7 @@ right: 360px;
    margin: 0 5px;
    border-radius: 5px;
 }
-.event_play {
-   background: url(images/btn_play.png) no-repeat;
-}
-.event_stop {
-   background: url(images/btn_stop.png) no-repeat;
-}
+
 /* 이벤트버튼2 */
 .event_btn_container2 {
    position: absolute;
@@ -353,7 +350,7 @@ right: 360px;
 }
 .main_hot_wrap {
    margin-top: 80px;
-   width: 1920px;
+   width: 100%;
    height: 600px;
    background: url(images/hot_main.jpg) no-repeat;
 }
@@ -456,7 +453,7 @@ right: 360px;
 }
 
 /* 인기상품 좌우버튼 */
-.hot_left_btn {
+.hot_left_btn img{
    position: absolute;
    top: 160px;
    left: 280px;
@@ -508,6 +505,7 @@ right: 360px;
    height: 5px;
    background-color: #F2F1D9;
 }
+/* 스크롤안에 막대 색깔바꾸기 */
 .kitchen_slide_img_container::-webkit-scrollbar-thumb {
    background: #C2C1AE;
 }
@@ -528,4 +526,129 @@ right: 360px;
    color: #3B3B3A;
    font-size: 20px;
    font-weight: bold;
+}
+
+/* 오뚜기 SNS */
+.SNS_wrap {
+   background: #FFFFFF;
+   width: 100%;
+   height: 755px;
+}
+.SNS_main_text {
+   text-align: center;
+}
+.SNS_main_text h2 {
+   font-size: 32px;
+   font-weight: 800;
+   color: #333333;
+   margin: 40px 0 45px 0;
+   line-height: 36px
+}
+.SNS_main_text p {
+   color: #666;
+   margin-bottom: 22px;
+   font-weight: 600;
+}
+.SNS_list_tap{
+   width: 1200px;
+   margin: auto;
+   /* background: #757575; */
+}
+.SNS_list_tap ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #ebebeb;
+}
+.SNS_list_tap ul li a{
+   color: #666;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 50px;
+   font-weight: bold;
+   transition: color .28s ease;
+   background: url(images/bul_tabline.png) no-repeat right center;
+}
+.SNS_list_tap ul li a:hover {
+   background: #223A6A;
+   color: #fff;
+}
+.tab_color {
+   background: #223A6A; 
+}
+.img_list {
+   width: 1200px;
+   margin: 50px auto;
+}
+.img_list img {
+   margin-right: 8px;
+}
+.img_list a p{
+   font-size: 14px;
+   font-weight: bold;
+   color: #737371;
+}
+.img_list ul{
+   display: flex;
+}
+
+/* 푸터 */
+.footer_top_container {
+   height: 70px;
+   border-top: 1px solid #c7c7c7;
+   border-bottom: 1px solid #c7c7c7;
+   display: flex;
+   background: #F7F7F7;
+   /* justify-content: space-between;
+   align-items: center; */
+}
+.footer_top{
+   width: 1200px;
+   margin: auto;
+}
+.footer_top ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer_top ul li a {
+   font-size: 15px;
+   font-weight: bold;
+   margin-right: 30px;
+   color: #3c3c3c;
+}
+.f_left {
+   float: left;
+   margin: 8px 0 0 0;
+}
+.f_right {
+   float: right;
+}
+.footer_bottom_container{
+   width: 1200px;
+   margin: auto;
+   font-size: 13px;
+   font-weight: 400;
+}
+.footer_bottom_container ul{
+   display: flex;
+}
+.footer_bottom_container ul li p {
+   margin-bottom: 6px;
+}
+.b_left {
+   margin: 15px 0 0 20px;
+}
+.b_right {
+   margin: 30px 0 0 25px;
+}
+.footer_bottom_wrap{
+   position: relative;
+}
+.b_last_img{
+   position: absolute;
+   top: 30px;
+   right: 340px;
 }
