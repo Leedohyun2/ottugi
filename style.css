@@ -66,12 +66,30 @@ ul,li {
    /* border-right: 1px solid black; */
    /* background: url(images/bul_tabline.png) no-repeat center right; */
 }
-
-
 .header_nav ul li a:hover {
    color: #DF2D32;
    border-bottom: 4px solid #DF2D32;
 }
+
+/* 드랍다운 메뉴 */
+.downMenu1_wrap {
+   position: relative;
+   width: 1200px;
+   height: 250px;
+   margin: auto;
+}
+.downMenuP1 {
+   font-size: 18px;
+}
+.downMenuP2 {
+   font: bold;
+   font-size: 28px;
+}
+.downMenu1 p {
+   padding: 20px 0;
+   color: #757575;
+}
+
 
 /* 메인이미지 좌우버튼 */
 .leftBtn {
