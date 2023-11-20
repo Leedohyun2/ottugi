@@ -513,12 +513,13 @@ right: 360px;
 }
 .kitchen_slide_img_container::-webkit-scrollbar {
    width: 0;
-   height: 5px;
+   height: 10px;
    background-color: #F2F1D9;
 }
 /* 스크롤안에 막대 색깔바꾸기 */
 .kitchen_slide_img_container::-webkit-scrollbar-thumb {
    background: #C2C1AE;
+   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover{
    background: #DF2D32;
