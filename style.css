@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:wght@300;400;700;900&family=Noto+Sans+KR&family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@300&display=swap');
 * {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   font-family: 'Noto Sans KR', sans-serif;
    /* font-family: 'Roboto Mono', monospace; */
 }
 
@@ -92,23 +94,29 @@ ul,li {
    position: absolute;
    display: flex;
    justify-content: space-between;
-   width: 60px;
-   top: 660px;
+   width: 100px;
+   top: 663px;
    left: 170px;
    /* background: #DF2D32; */
    z-index: 10000;
 }
-.firstBtn {
-   border-radius: 50px;
+.firstBtn, .secondBtn, .thirdBtn {
+   background: #fff;
+   display: block;
+   width: 13px;
+   height: 13px;
+   margin: 0 8px;
+   border-radius: 10px;
+   text-indent: -9999px;
 }
-.secondBtn {
-   background: #FFFFFF;
-   width: 10px;
-   border-radius: 50%;
+.firstBtn:hover {
+   background: url(images/pointer.gif) center no-repeat;
 }
-.thirdBtn {
-   background: #FFFFFF;
-   border-radius: 50%;
+.secondBtn:hover {
+   background: url(images/pointer.gif) center no-repeat;
+}
+.thirdBtn:hover {
+   background: url(images/pointer.gif) center no-repeat;
 }
 
 /* 메인페이지 플레이/스탑 버튼 */
@@ -117,8 +125,8 @@ ul,li {
    display: flex;
    justify-content: space-between;
    width: 30px;
-   top: 660px;
-   left: 320px;
+   top: 657px;
+   left: 290px;
 }
 
 /* 우측상단 랭귀지 버튼  */
@@ -325,6 +333,9 @@ right: 360px;
    margin: 0 5px;
    border-radius: 5px;
 }
+.event_btn:hover{
+   background: url(images/pointer.gif) center no-repeat;
+}
 
 /* 이벤트버튼2 */
 .event_btn_container2 {
@@ -508,6 +519,9 @@ right: 360px;
 /* 스크롤안에 막대 색깔바꾸기 */
 .kitchen_slide_img_container::-webkit-scrollbar-thumb {
    background: #C2C1AE;
+}
+::-webkit-scrollbar-thumb:hover{
+   background: #DF2D32;
 }
 .kitchen_slide_img1 {
    margin-right: 34px;
