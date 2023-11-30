@@ -39,6 +39,11 @@ $(document).ready(function(){
    });
 
    // 메인메뉴 슬라이드
+   $(document).ready(function () {
+      $(".main_img_wrap").bxSlider({
+         auto: true
+      });
+   });
 });
 
 
